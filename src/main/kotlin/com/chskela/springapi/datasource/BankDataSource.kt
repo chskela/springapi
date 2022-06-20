@@ -5,4 +5,6 @@ import com.chskela.springapi.models.Bank
 interface BankDataSource {
 
     fun retrieveBanks(): Collection<Bank>
+
+    fun retrieveBank(accountNumber: String): Bank
 }
